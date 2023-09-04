@@ -1,0 +1,16 @@
+{
+  "name": "lab42/php3_course_public",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "elire",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "ext-curl": "*",
+    "ext-mbstring": "*"
+  }
+}
