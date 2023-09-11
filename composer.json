@@ -11,6 +11,8 @@
   ],
   "require": {
     "ext-curl": "*",
-    "ext-mbstring": "*"
+    "ext-mbstring": "*",
+    "php": "8.*",
+    "guzzlehttp/guzzle": "^7.8"
   }
 }
