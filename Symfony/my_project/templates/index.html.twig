@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    {% apply upper %}
+{{ greeting }}, {{ name }}!!!
+    {% endapply %}
+    {# приветствуем как бы #}
+
+    {% for user in users %}
+        {{ user.name }} {{ user.surname }},
+    {% endfor %}
+    {{ "now" | date(timezone= "Europe/Moscow" ) }}
+    {{ html | raw }}
+    <img style="width: 30%" src="{{ asset('ocean.jpg', 'img') }}"  alt="Океан(красивый)">
+
+    Пишите админу на <a href="mailto:{{ admin }}">{{ admin }}</a>
+{% endblock %}

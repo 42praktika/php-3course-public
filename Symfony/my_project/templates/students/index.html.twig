@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{%  block stylesheets %}
+
+    {{ parent() }}
+    <style>
+        table {border: 2px solid black}
+        td {border: 1px solid darkgray}
+    </style>
+
+{% endblock %}
+
+{% block title %}Hello StudentsController!{% endblock %}
+
+{% block body %}
+
+
+    <table>
+        <tbody>
+        {% for student in students %}
+
+            <tr>
+                <td>{{ student.firstname }}</td>
+                <td>{{ student.lastname }}</td>
+                <td>{{ student.groupnum }}</td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
