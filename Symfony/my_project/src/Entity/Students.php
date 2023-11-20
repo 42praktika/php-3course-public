@@ -78,4 +78,9 @@ class Students
 
         return $this;
     }
+
+    public function getFullName()
+    {
+        return "{$this->getLastname()} {$this->getFirstname()}";
+    }
 }
