@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+{#    {% if errors is defined %}#}
+{#    <ul>#}
+{#        {% for error in errors %}#}
+{#        <li style="color: red">{{ error }}</li>#}
+{#        {%  endfor %}#}
+{#    </ul>#}
+{#    {% endif %}#}
+
+{#    <form method="post" action="{{ path('add_student') }}">#}
+
+{#         <label>Имя:#}
+{#            <input type="text" name="firstname" value="{{ firstname }}" >#}
+{#        </label> <br>#}
+{#        Фамилия: <input type="text" name="lastname" value="{{ lastname }}"/> <br>#}
+{#        Группа: <input type="text" name="groupnum" value="{{ groupnum }}" /> <br>#}
+{#        <input type="submit">#}
+{#    </form>#}
+
+{#    {{ form_start(form) }}#}
+{#    <div class="my-custom-class-for-errors">#}
+{#        {{ form_errors(form) }}#}
+{#    </div>#}
+
+{#    <div class="row">#}
+
+
+{#        <div class="col">#}
+{#          {{ form_label(form.firstname) }} {{ form_widget(form.firstname) }}#}
+{#            <div style="color: red"> {{ form_errors(form.firstname) }}</div>#}
+{#        </div>#}
+
+{#        <div class="col" id="some-custom-id">#}
+{#            {{ form_row(form.lastname) }}#}
+{#        </div>#}
+{#        <div class="col">#}
+{#            {{ form_row(form.groupnum) }}#}
+{#        </div>#}
+{#    </div>#}
+{#    {{ form_end(form) }}#}
+{{ form(form) }}
+{% endblock %}
